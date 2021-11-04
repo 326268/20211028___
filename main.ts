@@ -27,16 +27,13 @@ input.onButtonPressed(Button.A, function () {
         . # # # .
         `)
 })
-input.onButtonPressed(Button.AB, function () {
-    basic.clearScreen()
-})
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
+        # . # . #
+        . . . . .
         # . . . #
-        . # # # .
-        . # . # .
-        . # # # .
-        # . . . #
+        . . . . .
+        # . # . #
         `)
 })
 let y = 0
