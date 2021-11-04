@@ -18,6 +18,27 @@ function 燈數 (num: number, 亮燈: boolean) {
         led.unplot(x, y)
     }
 }
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        # . . . #
+        # . . . #
+        . # # # .
+        `)
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.clearScreen()
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        # . . . #
+        . # # # .
+        . # . # .
+        . # # # .
+        # . . . #
+        `)
+})
 let y = 0
 let x = 0
 let a = 0
